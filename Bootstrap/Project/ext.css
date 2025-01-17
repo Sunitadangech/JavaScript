@@ -1,0 +1,15 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: border-box;
+}
+
+
+/* Contact Image */
+.contact-img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ecf0f1;
+    margin-bottom: 10px;
+}

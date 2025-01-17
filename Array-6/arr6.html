@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array6</title>
+</head>
+
+<body>
+    <script>
+        let arr = new Array()
+        arr[0] = 10;
+        arr[1] = true;
+        arr[2] = { company: "samsung", model: "s23 ultra", price: 800000 };
+        console.log(arr);
+        //Array creation by using array constructor
+        let arr2 = new Array(10, 20, true, () => {
+            console.log("array constructor")
+        })
+        console.log(arr2);
+        arr2[3]();
+    </script>
+</body>
+
+</html>

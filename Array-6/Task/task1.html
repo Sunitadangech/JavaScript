@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        #bulb{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="bulb"></div>
+    <button onclick="getChange()">Change Color</button>
+    <script>
+        let color=["Red","Blue","Pink","Hotpink","Orange"];
+        let index=0;
+        let ele=document.getElementById("bulb");
+        function getChange() {
+            ele.style.backgroundColor=color[index];
+            index++;
+        }
+    </script>
+</body>
+</html> 

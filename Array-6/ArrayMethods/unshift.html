@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unshift</title>
+</head>
+
+<body>
+    <script>
+        // unshift(): It is use to add the element from start index.
+        // Note: We can add more than one element simultaneously.
+        // unshift(element1,element2,elementm_n).
+
+        let mobile = ["iphone", "samsung", "oneplus", "oppo", "nokia"];
+        console.log(mobile);  //["iphone", "samsung", "oneplus", "oppo", "nokia"]
+        
+        console.log(mobile.unshift("vivo", "moto"));  //7
+        console.log(mobile);  //['vivo', 'moto', 'iphone', 'samsung', 'oneplus', 'oppo', 'nokia']
+
+
+        let color = ["red", "blue", "green", "black"];
+        let arr1 = ["violet", "pink"];
+        let arr2 = ["hotpink", "skyblue", "aqua"];
+        color.unshift(...arr1, ...arr2)
+        console.log(color);  //['violet', 'pink', 'hotpink', 'skyblue', 'aqua', 'red', 'blue', 'green', 'black']
+
+    </script>
+</body>
+
+</html>

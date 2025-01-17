@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push1</title>
+</head>
+<body>
+    <script>
+        // push(element1,elmemnt2,element_n): It is use to add the elements from last index.
+        // Note: We can push more than one element simultaneously.
+
+        let array1=["index-0","index-1","index-2","index-3","index-4"];
+        console.log(array1);
+        array1[5]="index-5"
+        console.log(array1);
+
+        array1.push("index-6","index-7","index-8");
+        console.log(array1);
+        
+        let array2=["newIndex-0","newIndex-1","newIndex-3"]
+        array1.push(...array2)
+        console.log(array1);
+        
+    </script>
+</body>
+</html>

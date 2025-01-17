@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+</head>
+
+<body>
+    <script>
+        function palyers(p1, p2, p3, p4, p5) {
+            console.log(p1);
+            console.log(p2);
+            console.log(p3);
+            console.log(p4);
+            console.log(p5);
+        }
+        palyers("p1", "p2", "p3", "p4", "p5")
+        function cricket(p1, p2, p3, p4, ...team) {
+            console.log(p1);
+            console.log(p2);
+            console.log(...team);
+            console.log(team);
+            console.log(team[3].pName);
+            team[3].olympicMedal = "Gold"
+        }
+        cricket("rohit", "virat", "Ms Dhoni", "yuvi", "sachin", "gambhir", "gaikwad", { pName: "milkha singh", game: "runner" })
+    </script>
+</body>
+
+</html>

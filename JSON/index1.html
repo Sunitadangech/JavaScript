@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+</head>
+<!--JSON  Server Setup
+ 1.Create a new folder name as server.
+ 2.install package.json in current working directory.(open the terminal and connect the Server folder(cd .\Server\))
+ command:npm init --yes   
+ 3.To install json server
+    command:npm install json-server
+    Install Insomnia(Testing Software)
+    npm i bootstrap
+    https://vpaste.net/pM8Hx
+    
+    getAllContacts
+    http://localhost:8000/contacts
+    
+    getContact
+    http://localhost:8000/contacts/id
+
+    PostContact
+    http://localhost:8000/contacts
+
+    deleteContact
+    http://localhost:8000/contacts/id
+
+    Short:
+    package.json
+    npm init --yes
+    json-server
+    npm install json-server
+    path
+    "start":"json-server --watch fileName.json -p number"("start":"json-server --watch db.json -p 8000")
+    -->
+
+
+<body>
+    <script>
+
+        let obj={
+            "key1":"value1",
+            "key2":"value2",
+            "keyn":"valuen"
+        }
+
+        console.log(obj);
+        console.log(obj.key1);
+
+        let obj1={
+            ename:"Sunita",
+            age:22,
+            email:"sunitadange200205@gmail.com"
+        }
+
+        console.log(obj1);
+        //JSON.stringify():It is used to convert js object into json format.
+        let str=JSON.stringify(obj1);
+        console.log(str);
+        
+        
+        
+        
+    </script>
+</body>
+</html>

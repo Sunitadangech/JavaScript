@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object8</title>
+</head>
+<body>
+    <script>
+        let objRef={
+            key1:"value1",
+            key2:"value2",
+            key3:"value3",
+            key4:"value4",
+            key5:"value5",
+        }
+        console.log(objRef.key1);
+        
+
+        
+        //Object Destructuring
+        // const{property1,property2,propertyn}=objectReference
+
+
+        
+        let obj2={
+            key11:"value11",
+            key22:"value22",
+            key33:"value33",
+            key44:"value44",
+            key55:"value55",
+        }
+        //let{key:var1,key2:var2,key3:var3}=objRef
+        //note: key:value=property
+        let{key11:var1,key22:var2,key33:var3,key44:var4,key55:var5,}=obj2;
+        console.log(var1);
+        console.log(var2);
+        
+        
+        
+    </script>
+</body>
+</html>

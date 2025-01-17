@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise4</title>
+</head>
+<body>
+    <script>
+        let promise4=new Promise((res1,rej1)=>{
+              setTimeout(()=>{
+                let phone={
+                    company:"apple",
+                    model:"16pro max",
+                    price:167000,
+                    isAvailable:true,
+                    color:"pink",
+                    ram:"258gb",
+                   }
+                   if (phone.isAvailable) {
+                    res1(phone)
+
+                   }
+                   else{
+                    rej1()
+                   }
+
+              },2000)
+        })
+        promise4.then((iphone1)=>{
+            console.log(iphone1);
+            console.log(`isAvailbale ${iphone1.isAvailable}`);
+
+            iphone1.isPurchased=true;
+            new Promise((res2,rej2)=>{
+                setTimeout(()=>{
+                    if (iphone1.isPurchased) {
+
+                   res2(iphone1);
+                    }
+                    else{
+
+                   rej2(alert("product is not purchased"))
+
+                    }
+                },3000)
+            }).then((iphone2)=>{
+                console.log(iphone2);
+                console.log(`isPurchased ${iphone2.isPurchased}`);
+
+                iphone2.isShipped=true;
+                 new Promise((res3,rej3)=>{
+                     setTimeout(()=>{
+                        if (iphone2.isShipped) {
+                            res3(iphone2)
+                        }
+                        else{
+                            rej3(alert("product is not shipped!!!"))
+                        }
+                     },4000)
+                 }).then((iphone3)=>{
+                    console.log(iphone3);
+                    console.log(`isShipped ${iphone3.isShipped}`);
+
+                    iphone3.isDelivered=true;
+
+                    new Promise((res4,rej4)=>{
+                        setTimeout(()=>{
+                            if (iphone3.isDelivered) {
+                                res4(iphone3)
+                            }
+                            else{
+                                rej4(alert("product is not delivered!!!"))
+                            }
+                        },5000)
+                    }).then((iphone4)=>{
+                              console.log(`isDelevered ${iphone4.isDelivered}`);
+                              iphone4.isUnboxed=true;
+                              new Promise((res5,rej5)=>{
+                                   setTimeout(()=>{
+                                    if (iphone4.isUnboxed) {
+                                        res5(iphone4)
+                                    }
+                                    else{
+                                        rej5(alert("product is not yet unboxed!!"))
+                                    }
+
+                                   },6000)
+                              }).then((iphone5)=>{
+                                   console.log(iphone5);
+                                   console.log(iphone5.isUnboxed);
+
+
+
+                              })
+
+                    })
+
+                 })
+
+
+            })
+
+
+        })
+        //http://vpaste.net/7LMlN
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hof2</title>
+</head>
+<body>
+    <script>
+        function parent(){
+            console.log("lets perform addition");
+            return(a,b)=>{
+                console.log(a+b);
+                console.log("lets perform mul");
+                return(a,b)=>{
+                    console.log(a*b);
+                    console.log("lets perform sub");
+                    return(a,b)=>{
+                        console.log(a-b);
+                        
+                    }
+                    
+                    
+                }
+                
+                
+            }
+            
+        }
+        parent()(10,20)(30,20)(100,50)
+    </script>
+</body>
+</html>

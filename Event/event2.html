@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event2</title>
+</head>
+<body>
+    <select name="" id="parent">
+    <option value="" disabled selected>Select Color</option>
+    <option value="blue">Blue</option>
+    <option value="Purple">Purple</option>
+    <option value="Green">Green</option>
+    <option value="Hotpink">Hotpink</option>
+    </select>
+
+    <script>
+        let parent=document.getElementById("parent")
+        parent.addEventListener("change",()=>{
+            document.body.style.backgroundColor=parent.value;
+        })
+        
+    </script>
+</body>
+</html>

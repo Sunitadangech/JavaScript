@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Function 1</title>
+</head>
+<body>
+    <script>
+        debugger
+        function parent(params){
+            console.log("parent function");
+            return ()=>{
+                console.log("lower order function");
+                
+            }
+            
+        }
+        parent()()
+    </script>
+</body>
+</html>

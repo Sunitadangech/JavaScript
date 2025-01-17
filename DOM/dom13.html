@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM13</title>
+</head>
+<body>
+    <script>
+        let ele=document.createElement("div");
+        document.body.appendChild(ele);
+        ele.innerHTML="div tag";
+        ele.style.border="1px solid"
+         let ele1=document.createElement("p");
+         ele.appendChild(ele1);
+          ele1.innerHTML="para";
+
+          let head1=document.createElement("h1");
+          ele.append(head1);
+          head1.innerHTML="Heading 1"
+          ///remove():It is use to remove an element from dom
+           ele1.remove();
+           console.log(ele1);
+           
+          
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM7</title>
+</head>
+<body>
+    <input type="radio" name="inp" id="" onclick="getRed()">
+    <input type="radio" name="inp" id="" onclick="getGreen()">
+    <input type="radio" name="inp" id="" onclick="getBlack()">
+    <script>
+        let inp1=document.getElementsByName("inp");
+        console.log(inp1[0]);
+
+        function getRed(params){
+            inp1[0].style.accentColor="red"
+        }
+
+        function getGreen(params){
+            inp1[1].style.accentColor="Green"
+        }
+
+        function getBlack(params){
+            inp1[2].style.accentColor="Black"
+        }
+        
+    </script>
+</body>
+</html>

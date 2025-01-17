@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise2</title>
+</head>
+<body>
+    <script>
+        let promise2=new Promise((res,rej)=>{
+            setTimeout(()=>{
+                let emp={
+                    eName:"ganya",
+                    isJoined:true,
+                }
+                if(emp.isJoined){
+                    res(emp)
+                }
+                else{
+                    rej()
+                }
+            },3000)
+        })
+
+        promise2.then((employee)=>{
+            console.log(employee);
+            employee.location="pune";
+            console.log(employee);
+            
+            
+        }).catch(()=>{
+            alert("Sorry !!!!! unfortunately u r rejected!!!!!")
+        })
+    </script>
+</body>
+</html>

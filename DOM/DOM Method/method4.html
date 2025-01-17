@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method4</title>
+</head>
+
+<body>
+    <input type="radio" name="inp" id="" onclick="getYellow()">
+    <input type="radio" name="inp" id="" onclick="getGreen()">
+    <input type="radio" name="inp" id="" onclick="getRed()">
+    <script>
+        let inp1 = document.getElementsByName("inp")
+        console.log(inp1[0]);
+
+        function getYellow(params) {
+            inp1[0].style.accentColor = "purple"
+        }
+
+        function getGreen(params) {
+            inp1[1].style.accentColor = "green"
+        }
+
+        function getRed(params) {
+            inp1[2].style.accentColor = "red"
+        }
+
+    </script>
+</body>
+
+</html>

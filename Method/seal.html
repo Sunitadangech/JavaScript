@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seal</title>
+</head>
+
+<body>
+    <script>
+        let human = {
+            name: "ganya",
+            age: 23,
+            email: "ganya123@gmail.com"
+        }
+        console.log(human);
+        delete human.age
+
+        // seal(): It is use to seal(lock) an object
+        // It is prevent to remove an existing key & value pair from object.
+
+        Object.seal(human);
+        delete human.name
+
+        human.name = "sonya"
+        Object.seal(human)
+
+        human.contact = 8586878889;
+        console.log(human);
+
+        // isSealed(): It is use to check the weather the object is sealed or not.
+        // Note: return type is boolean.
+
+        console.log(Object.isSealed(human));
+
+    </script>
+</body>
+
+</html>

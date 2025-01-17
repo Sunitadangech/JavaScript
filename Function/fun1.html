@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function1</title>
+</head>
+<body>
+    <div id="bulb" style="height:200px; width:200px; border:1px solid; border-radius:50%;"></div>
+    <button onclick="geton()">ON</button>
+    <button onclick="getoff()">OFF</button>
+    <script>
+        function declaration(params){
+            console.log("Hey This is function declaration");
+        }
+        declaration()//function call statement
+
+        let bulb1=document.getElementById("bulb");
+
+        function geton(params){
+            bulb1.style.background=prompt("Enter Your Color");
+        }
+        function getoff(params){
+            bulb1.style.background="#3333";
+        }
+        
+    </script>
+</body>
+</html>

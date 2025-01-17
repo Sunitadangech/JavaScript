@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign</title>
+</head>
+
+<body>
+    <script>
+        let car = {
+            company: "tata",
+            model: "safari",
+            price: 1800000,
+        }
+        console.log(car);
+
+        let engine = {
+            axle: "4*4",
+            drive: "frontwheel",
+        }
+        console.log(engine);
+
+        console.log(Object.assign(car, engine));
+
+        engine.stroke = "2 stroke";
+        // console.log(engine);
+        // console.log(car);
+
+        let specifications = {
+            steering: "power",
+            sunroof: "yes",
+            window: "power",
+        }
+
+        console.log(Object.assign(car, engine, specifications));
+        console.log(car);
+        console.log(engine);
+        console.log(specifications);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event3</title>
+</head>
+<body>
+  <input type="text" id="demo">  
+  <h4>We are Writing:<span id="text"></span></h4>
+
+  <script>
+    let input=document.getElementById('demo')
+    input.addEventListener("keypress",()=>{
+        document.getElementById("text").innerHTML=input.value;
+    })
+    //keypress,keydown,keyup
+    //click,dbclick,mouseover,mouseout,change
+  </script>
+</body>
+</html>

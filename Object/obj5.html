@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object5</title>
+</head>
+<body>
+    <script>
+        //Conditional Rendering
+        let human1={
+            name:"Sunita",
+            age:22,
+            voting:()=>{
+                console.log(`welcome to voting`);
+                
+            }
+        }
+        let human2={
+            name:"Balkrushna",
+            age:24,
+        }
+        //Synatax:condition?statement1:statement2
+       // human1.name=="Sunita"?console.log(human1):console.log(human2)
+       human1.age<=prompt("Enter your age")?human1.voting():alert("goto home and watch pogo");
+        
+    </script>
+</body>
+</html>

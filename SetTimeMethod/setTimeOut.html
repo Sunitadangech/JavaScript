@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time Out</title>
+</head>
+
+<body>
+    <script>
+        function callback(params) {
+            console.log("Callback1 Invoked!!!");
+        }
+        setTimeout(callback, 2000)
+
+        setTimeout(() => {
+            console.log("Callback2 Invoked!!!");
+        }, 3000);
+    </script>
+</body>
+
+</html>

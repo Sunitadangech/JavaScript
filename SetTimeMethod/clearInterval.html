@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear Interval</title>
+</head>
+
+<body>
+    <p id="print">What is your lucky number? Let's check!!!</p>
+    <button onclick="luckyNumber()">Check</button>
+    <button onclick="stopInterval()">Get Lucky Number</button>
+    <script>
+        let number = 0;
+        let ele = document.getElementById("print");
+        let stop;
+
+        function luckyNumber() {
+            ele.innerHTML = "....loading"
+            ele.style.color = "red"
+            stop = setInterval(() => {
+                ele.innerHTML =`Your lucky number is it ${number}`
+                ele.style.color = "blue"
+                number++
+            }, 1000);
+        }
+
+        function stopInterval(params) {
+            clearInterval(stop)
+        }
+    </script>
+</body>
+
+</html>
